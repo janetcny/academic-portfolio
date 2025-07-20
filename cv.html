@@ -1,23 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Janet Chang – Academic Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Janet Chang Nok Yan</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="work.html">Research</a></li>
-    </nav>
-  </header>
-<head>
     <meta charset="UTF-8">
-    <title>Nok Yan CHANG - Academic CV</title>
+    <title>Janet Chang – Academic Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
@@ -83,16 +69,64 @@
             min-width: 200px;
             margin-right: 32px;
         }
+        header {
+            background: #28527a;
+            color: #fff;
+            padding: 24px 0 12px 0;
+            margin-bottom: 32px;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 2px 8px rgba(40,82,122,0.07);
+        }
+        header h1 {
+            margin: 0 0 4px 0;
+            font-size: 2em;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex;
+        }
+        nav ul li {
+            margin: 0 16px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05em;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #fdd835;
+        }
         @media (max-width:600px) {
             .container { padding: 20px 8px; }
             .skills-list { flex-direction: column; }
             .skills-list > div { margin-right: 0; margin-bottom: 10px;}
+            header { padding: 14px 0 7px 0;}
+            nav ul { flex-direction: column; }
+            nav ul li { margin: 7px 0; }
         }
     </style>
 </head>
 <body>
+  <header>
+    <h1>Janet Chang Nok Yan</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="work.html">Research</a></li>
+      </ul>
+    </nav>
+  </header>
     <div class="container">
-        <h1>Nok Yan CHANG</h1>
         <div class="contact">
             94093679 &nbsp;|&nbsp; <a href="mailto:janetny.chang@gmail.com">janetny.chang@gmail.com</a>
         </div>
@@ -103,24 +137,23 @@
             </p>
         </div>
         <div class="section">
-            <h2>Education</h2>
-            <div class="item-list">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
                 <div>
-                    <span class="role">PhD in Physics</span>,
-                    <span class="org">The University of Hong Kong</span>
-                    <span class="year">2025</span>
-                    <ul>
-                        <li>Published multiple results in a top-tier peer-reviewed astrophysics journal</li>
-                        <li>Awarded Hong Kong PhD Fellowship</li>
-                    </ul>
+                    <strong>Programming:</strong><br>
+                    Python (Pandas, Numpy, Scikit-learn, Matplotlib), SQL, Linux, Latex
                 </div>
                 <div>
-                    <span class="role">Distinction in Combined Honors in Physics and Astronomy</span>,
-                    <span class="org">University of British Columbia</span>
-                    <span class="year">2019</span>
-                    <ul>
-                        <li>Science Undergraduate Research Experience Award</li>
-                    </ul>
+                    <strong>Data Analysis:</strong><br>
+                    Statistical modeling, machine learning, predictive analytics, data cleaning, time-series analysis, fourier transform
+                </div>
+                <div>
+                    <strong>Certificate:</strong><br>
+                    Supervised Machine Learning (Stanford Online)
+                </div>
+                <div>
+                    <strong>Language:</strong><br>
+                    Fluent in English, Cantonese, and Mandarin
                 </div>
             </div>
         </div>
@@ -157,24 +190,25 @@
                 </div>
             </div>
         </div>
-         <div class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-list">
+        <div class="section">
+            <h2>Education</h2>
+            <div class="item-list">
                 <div>
-                    <strong>Programming:</strong><br>
-                    Python (Pandas, Numpy, Scikit-learn, Matplotlib), SQL, Linux, Latex
+                    <span class="role">PhD in Physics</span>,
+                    <span class="org">The University of Hong Kong</span>
+                    <span class="year">2025</span>
+                    <ul>
+                        <li>Published multiple results in a top-tier peer-reviewed astrophysics journal</li>
+                        <li>Awarded Hong Kong PhD Fellowship</li>
+                    </ul>
                 </div>
                 <div>
-                    <strong>Data Analysis:</strong><br>
-                    Statistical modeling, machine learning, predictive analytics, data cleaning, time-series analysis, fourier transform
-                </div>
-                <div>
-                    <strong>Certificate:</strong><br>
-                    Supervised Machine Learning (Stanford Online)
-                </div>
-                <div>
-                    <strong>Language:</strong><br>
-                    Fluent in English, Cantonese, and Mandarin
+                    <span class="role">Distinction in Combined Honors in Physics and Astronomy</span>,
+                    <span class="org">University of British Columbia</span>
+                    <span class="year">2019</span>
+                    <ul>
+                        <li>Science Undergraduate Research Experience Award</li>
+                    </ul>
                 </div>
             </div>
         </div>
